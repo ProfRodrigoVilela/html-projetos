@@ -1,0 +1,59 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+form table {
+    width: 100%;
+}
+
+form table td {
+    padding: 10px;
+}
+
+form table td input[type="text"],
+form table td textarea,
+form table td select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form table td input[type="radio"],
+form table td input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form table td input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form table td input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+h1, p {
+    text-align: center;
+}

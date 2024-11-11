@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+    <script>
+        function valida(f) {
+            if (f.nome.value === "") {
+                alert("O campo nome não pode ficar vazio!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <b>Preencha o formulário e clique no botão Enviar</b>
+    <p>
+    <form action="Form.html" method="get" onsubmit="return valida(this);">
+        <table border="1" cellpadding="4">
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" size="45" name="nome"></td>
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td>
+                    <input type="radio" name="sexo" value="M" checked>Masculino
+                    <input type="radio" name="sexo" value="F">Feminino
+                </td>
+            </tr>
+            <tr>
+                <td>Cidade:</td>
+                <td><input type="text" size="20" name="cidade"></td>
+            </tr>
+            <tr>
+                <td>Estado:</td>
+                <td>
+                    <select name="estado">
+                        <option value="0">Selecione</option>
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <b>Quais Objetos a seguir você gosta?</b>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="checkbox" name="GELADEIRA" value="Gel">Geladeira &nbsp;
+                    <input type="checkbox" name="VideoGame" value="VG">VídeoGame &nbsp;
+                    <input type="checkbox" name="Celular" value="Cel">Celular &nbsp;
+                    <input type="checkbox" name="TV" value="TV">Televisão
+                </td>
+            </tr>
+            <tr>
+                <td>Mensagem:</td>
+                <td><textarea name="mensagem" rows="4" cols="35"></textarea></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" value="Enviar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO 1</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formulário de cadastro</legend>
+            <label for="nome"></label>
+            <input type="text" size="40" maxlength="100" name="caixa" value="Digite seu e-mail">
+        </fieldset>
+        <p>
+            <label for="caixasenha">Senha</labe>
+                <input type="password" size="20" maxlength="30" name="caixasenha">
+        <p>
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" value="masc" checked> Masculino
+            <input type="radio" name="sexo" value="fem" checked> Feminino 
+        <p>Prêmio Desejado: <br>
+            <input type="checkbox" name="escolha1" checked> Computador
+        <br />
+            <input type="checkbox" name="escolha2" > Vídeo Game
+        <br>
+            <input type="checkbox" name="escolha3" > Celular
+        <p>Estado:
+            <select name="estado">
+                <option value="0"> Selecione</option>
+                <option value="sp">SP</option>
+                <option value="rj">RJ</option>
+                <option value="df">DF</option>
+            </select>              
+    </form>
+</body>
+</html>
